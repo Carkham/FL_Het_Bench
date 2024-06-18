@@ -99,12 +99,12 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_FLHetBench_Benchmarking_Device_and_State_Heterogeneity_in_Federated_Learning_CVPR_2024_paper.html" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper comming soon...</span>
+                        <span>Paper</span>
                       </a>
                     </span>
 
@@ -157,6 +157,13 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <h2 class="title is-3">What is FLHetBench?</h2>
+        <div class="content has-text-justified">
+          <p>
+            FLHetBench is the first FL benchmark targeted toward understanding:<em><strong>What happens to different FL algorithms when they are employed in real-world FL environments with varying degrees of device and state heterogeneity?
+            </p></strong></em> 
+          </p>
+        </div>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
@@ -171,6 +178,109 @@
 
 
 <!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div id="results-carousel">
+       <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Overview<br></h2>
+       </div>
+       <div class="item">
+        <!-- Your image here -->
+        <center>
+          <img src="static/images/framework.png" style="width: 50%;" alt="MY ALT TEXT"/>
+        </center>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified ">
+              <p>
+                FLHetBench consists of 1) two sampling methods, DPGMM for continuous device database and DPCSM for discrete state database, to sample real-world device and state datasets with varying heterogeneity; and 2) various metrics (DevMC-R/T for device heterogeneity, StatMC-R/T for state heterogeneity, and InterMC-R/T for both device and state heterogeneity) to assess the device/state heterogeneity in FL.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Heterogeneity Simulation<br></h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <center>
+            <img src="static/images/heterogeneity data.png" style="width: 80%;" alt="MY ALT TEXT"/>
+          </center>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified ">
+                <p>
+                  DPGMM and DPCSM allows us to sample varying degrees of device and state heterogeneity. We show the device distributions(device heterogeneity) and client states(state heterogeneity) of the sampled datasets with different heterogeneity levels (mild, middle and severe).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-3">Assessing Metrics<br></h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <center>
+              <img src="static/images/metric.png" style="width: 72%;" alt="MY ALT TEXT"/>
+            </center>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <div class="content has-text-justified ">
+                  <p>
+                    FLHetBench provides assessment to device and state heterogeneity by mimicking the real FL training process and accounting for various confounding factors.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-3">Benchmark Results<br></h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <center>
+              <img src="static/images/benchmark results.png" style="width: 75%;" alt="MY ALT TEXT"/>
+            </center>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <div class="content has-text-justified ">
+                  <p>
+                    We evaluate the performance of existing FL methods under varying degrees of device and state heterogeneity using FLHetBench.
+                  <p>
+                    <strong>Observation:</strong> Most methods perform well under mild device and state heterogeneity, but struggle with increased heterogeneity.
+                  </p>
+                  <p>
+                    <strong>Two factors:</strong> The increased wall-clock time of clients and the low resource utilization of participating clients
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-3">BiasPrompt+<br></h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <center>
+              <img src="static/images/biasprompt+.png" style="width: 75%;" alt="MY ALT TEXT"/>
+            </center>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <div class="content has-text-justified ">
+                  <p>
+                    BiasPrompt+ is a heterogeneity-aware algorithm which comprises two modules: a gradient surgery-based staleness-aware aggregation strategy and a communication-efficient module BiasPrompt based on fast weights.
+                  </p>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+</div>
+</section>
 <!-- End image carousel -->
 
 
